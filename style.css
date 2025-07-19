@@ -13,7 +13,7 @@ header {
     background-color: #2f5498; /* Matches your title background */
     color: white;
     position: relative; /* Retain for any absolute positioning if needed */
-    margin-bottom: 20px; /* Added to create space below header */
+    margin-bottom: 20px; /* Space below header */
 }
 
 /* Info box styling */
@@ -71,7 +71,7 @@ header {
 }
 
 .copy-btn:hover {
-    background-color: #4ad65f;
+    background-color: #abf6b6; /* Corrected from #4ad65f to match hover effect */
 }
 
 /* Existing styles remain unchanged unless modified below */
@@ -82,14 +82,12 @@ header {
     padding: 10px;
     background-color: #2f5498; /* Matches your title background */
     color: white;
+    width: 100%; /* Ensure it takes full width */
+    justify-content: space-between; /* Distribute space between logo and text */
 }
 
-/* Desktop styling */
 .logo-container {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-left: 10px; /* Space from the left if needed */
 }
 
 .logo-container img {
@@ -97,20 +95,26 @@ header {
     height: auto;
 }
 
+.title-container {
+    flex: 1;
+    text-align: center; /* Center the text */
+}
+
+.title-container h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
 /* Media query for mobile devices (e.g., screens up to 768px) */
 @media (max-width: 768px) {
     .content-wrapper {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px 0; /* Adjust padding for mobile */
+        flex-direction: row; /* Keep side by side on mobile */
+        justify-content: space-between; /* Maintain space between elements */
+        padding: 10px; /* Adjust padding for mobile */
     }
 
     .logo-container {
-        position: absolute; /* Use absolute positioning */
-        right: 10px; /* Move to the right corner */
-        top: 10px; /* Adjust top position as needed */
-        margin-bottom: 0; /* Remove bottom margin since it's positioned */
-        text-align: right; /* Ensure alignment if needed */
+        margin-left: 0; /* Remove left margin on mobile if not needed */
     }
 
     .logo-container img {
