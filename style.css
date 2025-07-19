@@ -15,26 +15,6 @@ header {
     position: relative; /* Retain for any absolute positioning if needed */
 }
 
-.logo-container {
-    margin-right: 10px; /* Space between logo and text */
-}
-
-.logo-container img {
-    max-width: 100px; /* Default size for larger screens */
-    height: auto;
-}
-
-/* Title section - customizable colors */
-.title-container {
-    flex: 1; /* Allows text to take available space */
-    text-align: left; /* Align text left on larger screens */
-    padding: 0; /* Remove padding to adjust with flex */
-}
-
-.title-container h1 {
-    margin: 0;
-    font-size: 2.2rem;
-}
 
 /* Info box styling */
 .info-box {
@@ -94,12 +74,39 @@ header {
     background-color: #abf6b6;
 }
 
+/* Existing styles remain unchanged unless modified below */
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #2f5498; /* Matches your title background */
+    color: white;
+}
+
+.logo-container {
+    margin-right: 10px;
+}
+
+.logo-container img {
+    max-width: 100px; /* Default size for larger screens */
+    height: auto;
+}
+
+.title-container {
+    flex: 1;
+}
+
+.title-container h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
 /* Media query for mobile devices (e.g., screens up to 768px) */
 @media (max-width: 768px) {
-    header {
+    .content-wrapper {
         flex-direction: column;
         text-align: center;
-        padding: 10px;
     }
 
     .logo-container {
@@ -109,10 +116,6 @@ header {
 
     .logo-container img {
         max-width: 80px; /* Smaller size for mobile */
-    }
-
-    .title-container {
-        text-align: center;
     }
 
     .title-container h1 {
