@@ -71,7 +71,7 @@ header {
 }
 
 .copy-btn:hover {
-    background-color: #abf6b6; /* Corrected from #4ad65f to match hover effect */
+    background-color: #4ad65f; /* Corrected from #4ad65f to match hover effect */
 }
 
 /* Existing styles remain unchanged unless modified below */
