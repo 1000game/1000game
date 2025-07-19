@@ -13,8 +13,8 @@ header {
     background-color: #2f5498; /* Matches your title background */
     color: white;
     position: relative; /* Retain for any absolute positioning if needed */
+    margin-bottom: 20px; /* Added to create space below header */
 }
-
 
 /* Info box styling */
 .info-box {
