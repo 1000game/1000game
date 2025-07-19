@@ -1,0 +1,97 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Title section - customizable colors */
+.title-container {
+    background-color: #2f5498; /* Change this for title background color */
+    color: white; /* Change this for title text color */
+    padding: 30px 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title-container h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* Info box styling */
+.info-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto 20px;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.verified {
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.highlight {
+    color: #ff4757;
+    font-weight: bold;
+}
+
+/* Coupon box styling */
+.coupon-box {
+    background-color: white;
+    border: 2px dashed #75dd84;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.coupon-code {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #75dd84;
+    letter-spacing: 2px;
+}
+
+.copy-btn {
+    background-color: #75dd84;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.copy-btn:hover {
+    background-color: #abf6b6;
+}
