@@ -85,7 +85,11 @@ header {
 }
 
 .logo-container {
-    margin-right: 10px;
+position: absolute; /* Use absolute positioning */
+        right: 10px; /* Move to the right corner */
+        top: 10px; /* Adjust top position as needed */
+        margin-bottom: 0; /* Remove bottom margin since it's positioned */
+        text-align: right; /* Ensure alignment if needed */
 }
 
 .logo-container img {
