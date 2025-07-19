@@ -84,12 +84,12 @@ header {
     color: white;
 }
 
+/* Desktop styling */
 .logo-container {
-position: absolute; /* Use absolute positioning */
-        right: 10px; /* Move to the right corner */
-        top: 10px; /* Adjust top position as needed */
-        margin-bottom: 0; /* Remove bottom margin since it's positioned */
-        text-align: right; /* Ensure alignment if needed */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .logo-container img {
@@ -97,25 +97,20 @@ position: absolute; /* Use absolute positioning */
     height: auto;
 }
 
-.title-container {
-    flex: 1;
-}
-
-.title-container h1 {
-    margin: 0;
-    font-size: 2.2rem;
-}
-
 /* Media query for mobile devices (e.g., screens up to 768px) */
 @media (max-width: 768px) {
     .content-wrapper {
         flex-direction: column;
         text-align: center;
+        padding: 10px 0; /* Adjust padding for mobile */
     }
 
     .logo-container {
-        margin-right: 0;
-        margin-bottom: 10px;
+        position: absolute; /* Use absolute positioning */
+        right: 10px; /* Move to the right corner */
+        top: 10px; /* Adjust top position as needed */
+        margin-bottom: 0; /* Remove bottom margin since it's positioned */
+        text-align: right; /* Ensure alignment if needed */
     }
 
     .logo-container img {
